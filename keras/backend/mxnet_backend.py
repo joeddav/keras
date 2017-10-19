@@ -80,6 +80,10 @@ def set_model(model):
     _MODEL = model
 
 
+def get_mxnet_module():
+    return _MODEL._mod
+
+
 def clear_session():
     reset_uids()
     _EXECUTOR = None
